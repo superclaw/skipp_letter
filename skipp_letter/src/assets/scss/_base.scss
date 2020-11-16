@@ -55,11 +55,29 @@ img {
 
 .wrapper {
   &-main {
+    min-width: 1000px;
     max-width: 1200px;
+
+    @media (max-width: 1000px) {
+      min-width: 768px !important;
+    }
+
+    @media (max-width: 768px) {
+      min-width: auto !important;
+    }
   }
 
   &-content {
+    min-width: 887.5px;
     width: 88.75%;
+
+    @media (max-width: 1000px) {
+      min-width: 681.6px !important;
+    }
+
+    @media (max-width: 768px) {
+      min-width: auto !important;
+    }
   }
 }
 
@@ -90,6 +108,8 @@ img {
 }
 
 .primary-btn {
+  width: max-content;
+  max-width: 320px;
   display: inline-block;
   padding-top: 23px;
   padding-right: 37px;
@@ -112,6 +132,8 @@ img {
 }
 
 .back-img {
+  margin-left: 20px;
+
   @media (max-width: 1000px) {
     width: 0;
   }
